@@ -51,11 +51,14 @@ const items = [{
 }];
 
 const maps = props => {
+    let c = 0;
     const map_items = items.map((item) => {
-        return (<div className="map-item" style={item.position}>
+        return (
+        <div className="map-item" style={item.position} key={c++}>
             <img src={item.img}></img>
-            <h3>Hogwarts Castle</h3>
-        </div>)
+            <h3>{item.name}</h3>
+        </div>
+        )
     });
     return map_items;
 }
