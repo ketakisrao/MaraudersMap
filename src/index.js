@@ -14,16 +14,16 @@ const routing = (
                 <div className="nav">
                     <h1 className="brand">The Marauders Map</h1>
                     <ul>
-                        <li><Link to="/">Places</Link></li>
-                        <li><Link to="/wizardsnwitches">Characters</Link></li>
-                        <li><Link to="/wizardsnwitches">Bertie Botts Beans</Link></li>
+                        <li><Link to="/MaraudersMap/">Places</Link></li>
+                        <li><Link to="/MaraudersMap/wizardsnwitches">Characters</Link></li>
+                        <li><Link to="/MaraudersMap/wizardsnwitches">Bertie Botts Beans</Link></li>
                     </ul>
                 </div>
 
                 <Switch>
-                    <Route exact path="/"><App /></Route>
-                    <Route exact path="/wizardsnwitches"><Character /></Route>
-                    <Redirect to="/" />
+                    <Route exact path="/MaraudersMap/"><App /></Route>
+                    <Route exact path="/MaraudersMap/wizardsnwitches"><Character /></Route>
+                    <Redirect to="/MaraudersMap/" />
                 </Switch>
             </Router>
         </div>
