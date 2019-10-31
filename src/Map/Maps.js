@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Map.css';
 
 
@@ -55,7 +55,7 @@ const maps = props => {
     const map_items = items.map((item) => {
         return (
         <div className="map-item" style={item.position} key={c++}>
-            <img src={item.img}></img>
+            <img src={item.img} alt={item.img}></img>
             <h3>{item.name}</h3>
         </div>
         )
