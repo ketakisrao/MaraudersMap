@@ -14,16 +14,16 @@ const routing = (
                 <div className="nav">
                     <h1 className="brand">The Marauders Map</h1>
                     <ul>
-                        <li><Link to="/MaraudersMap/">Places</Link></li>
-                        <li><Link to="/MaraudersMap/wizardsnwitches">Characters</Link></li>
-                        <li><Link to="/MaraudersMap/wizardsnwitches">Bertie Botts Beans</Link></li>
+                        <li><Link to={process.env.PUBLIC_URL + '/'}>Places</Link></li>
+                        <li><Link to={process.env.PUBLIC_URL + '/wizardsnwitches'}>Characters</Link></li>
+                        <li><Link to={process.env.PUBLIC_URL + '/wizardsnwitches'}>Bertie Botts Beans</Link></li>
                     </ul>
                 </div>
 
                 <Switch>
-                    <Route exact path="/MaraudersMap/"><App /></Route>
-                    <Route exact path="/MaraudersMap/wizardsnwitches"><Character /></Route>
-                    <Redirect to="/MaraudersMap/" />
+                    <Route exact path={process.env.PUBLIC_URL + '/'}><App /></Route>
+                    <Route exact path={process.env.PUBLIC_URL + '/wizardsnwitches'}><Character /></Route>
+                    <Redirect to={process.env.PUBLIS_URL + '/'} />
                 </Switch>
             </Router>
         </div>
