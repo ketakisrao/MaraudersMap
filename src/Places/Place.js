@@ -6,12 +6,11 @@ import { items } from '../Map/Maps';
 function Place()
 {
     let { id } = useParams();
+    let [count, setCount] = useState(0);
     let i = items.findIndex(k => k.link == (process.env.PUBLIC_URL + '/' + id));
     let obj = items[i];
     console.log(id);
     console.log(obj);
-    console.log(i);
-    
 
     var likes_array = localStorage.getItem('likes').split(',');
     count = likes_array[i];
