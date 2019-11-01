@@ -19,7 +19,7 @@ export const items = [{
         left: "50px"
     },
     link: '/hogsmeade',
-        des: 'Hogsmeade Village, or simply called Hogsmeade, is the only all-wizarding village in Britain. It was founded by Hengist of Woodcroft. Since before 1714 (when the 1714 Edict was passed), Hogwarts third years and above have been permitted weekend trips into the village. Mainly, students frequent the High Street in the village which contains the named specialty shops and pubs such as Zonko\'s Joke Shop and Honeydukes. Otherwise, they wander on to observe the infamous Shrieking Shack. Hogsmeade is a picturesque little village of cottages and shops, with enchanted candles hanging in the trees during the holidays.It is also near the location of the train station used by the Hogwarts Express.',
+    des: 'Hogsmeade Village, or simply called Hogsmeade, is the only all-wizarding village in Britain. It was founded by Hengist of Woodcroft. Since before 1714 (when the 1714 Edict was passed), Hogwarts third years and above have been permitted weekend trips into the village. Mainly, students frequent the High Street in the village which contains the named specialty shops and pubs such as Zonko\'s Joke Shop and Honeydukes. Otherwise, they wander on to observe the infamous Shrieking Shack. Hogsmeade is a picturesque little village of cottages and shops, with enchanted candles hanging in the trees during the holidays.It is also near the location of the train station used by the Hogwarts Express.',
     img: "images/Hogsmeade.jpg"
 },
 {
@@ -63,17 +63,19 @@ export const items = [{
     img: "images/Dumbledore'sOffice.jpg"
 }];
 
-if(!localStorage.getItem('likes')) 
+if (!localStorage.getItem('likes'))
     localStorage.setItem('likes', [10, 15, 3, 25, 2, 9]);
 
 const maps = props => {
     let c = 0;
     const map_items = items.map((item) => {
         return (
-            <div className="map-item" style={item.position} key={c++}>
-                <Link to={process.env.PUBLIC_URL + item.link}><img src={item.img} alt={item.img}></img></Link>
-                <h3>{item.name}</h3>
-            </div>
+            <Link to={process.env.PUBLIC_URL + item.link}>
+                <div className="map-item" style={item.position} key={c++}>
+                    <img src={item.img} alt={item.img}></img>
+                    <h3>{item.name}</h3>
+                </div>
+            </Link>
         )
     });
     return map_items;

@@ -9,8 +9,6 @@ function Place()
     let [count, setCount] = useState(0);
     let i = items.findIndex(k => k.link == ('/' + id));
     let obj = items[i];
-    console.log(id);
-    console.log(obj);
 
     var likes_array = localStorage.getItem('likes').split(',');
     count = likes_array[i];

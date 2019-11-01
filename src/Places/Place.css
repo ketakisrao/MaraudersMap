@@ -15,17 +15,21 @@
 }
 
 .like {
+    margin-top: 20px;
     text-align: right;
 }
 .like span button {
     cursor: pointer;
+    height: 25px;
+    border-radius: 3px;
 }
 .back-btn {
     text-align: left;
 }
 .back-btn button {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
     cursor: pointer;
 }
 

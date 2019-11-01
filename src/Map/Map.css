@@ -3,7 +3,10 @@
     cursor: pointer;
 }
 
-
+a {
+    text-decoration: none;
+    color: white;
+}
 .map-item img {
     max-width: 300px;
     max-height: 200px;

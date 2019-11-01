@@ -24,7 +24,7 @@ const routing = (
                 <Switch>
                     <Route exact path={process.env.PUBLIC_URL + '/'}><App /></Route>
                     <Route exact path={process.env.PUBLIC_URL + '/wizardsnwitches'}><Character /></Route>
-                    <Route path={process.env.PUBLIC_URL +"/:id"} children={<Place />} />
+                    <Route path={process.env.PUBLIC_URL + "/:id"} children={<Place />} />
                     <Redirect to={process.env.PUBLIS_URL + '/'} />
                 </Switch>
             </Router>
