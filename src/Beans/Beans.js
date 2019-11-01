@@ -26,7 +26,7 @@ function Beans() {
     return (
         <div className="beans">
             <h3>Bertie Botts Every Flavor Beans</h3>
-            <img src="/images/gumball.gif" />
+            <img src="images/gumball.gif" />
             <div>
                 <button onClick={getBean}>Get My Bean!</button>
                 <br />
