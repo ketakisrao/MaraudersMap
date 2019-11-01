@@ -1,6 +1,13 @@
 import React from 'react';
 import './Character.css';
 
+const characters = [
+    {
+        name: "Harry Potter",
+        img: "",
+        des: "",
+    }
+];
 
 const character = props => {
     return (
