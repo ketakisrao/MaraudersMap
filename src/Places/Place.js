@@ -7,7 +7,7 @@ function Place()
 {
     let { id } = useParams();
     let [count, setCount] = useState(0);
-    let i = items.findIndex(k => k.link == (process.env.PUBLIC_URL + '/' + id));
+    let i = items.findIndex(k => k.link == ('/' + id));
     let obj = items[i];
     console.log(id);
     console.log(obj);
