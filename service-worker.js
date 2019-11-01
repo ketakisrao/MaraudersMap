@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/MaraudersMap/precache-manifest.797fac5344c4defd1b5787546f815ee4.js"
+  "/MaraudersMap/precache-manifest.1a7050565d977526ccbb947866685f91.js"
 );
 
 self.addEventListener('message', (event) => {
